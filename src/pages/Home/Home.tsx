@@ -57,7 +57,7 @@ const SPEAKERS = [
   },
   {
     name: "Humpty Calderon",
-    imgPath: "jun li.jpg",
+    imgPath: "ont.png",
     positions: [
       "Head of Community - Ontology",
       
