@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Futura";
+  src: url("../public/fonts/futura/Futura Heavy font.ttf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../public/fonts/satoshi/Satoshi.ttf");
+}
