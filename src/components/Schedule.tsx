@@ -49,7 +49,7 @@ const PROGRAMME: Segment[] = [
   {
     name: "Advantage/Disadvantage of POS",
     time: "10:15AM - 10:30AM",
-    assigned: "Jun Li",
+    assigned: "Humpty Calderon",
   },
   {
     name: "Cyber security and digital fruad",
@@ -84,7 +84,7 @@ const PROGRAMME: Segment[] = [
   {
     name: "what is ontology? ont staking/validator?",
     time: "02:00PM - 02:30PM",
-    assigned: "JunLi",
+    assigned: "Humpty Calderon",
   },
   {
     name: "what is Firs choice coin? fcc staking?",
