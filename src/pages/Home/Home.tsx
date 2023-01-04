@@ -56,12 +56,11 @@ const SPEAKERS = [
     ],
   },
   {
-    name: "Jun Li",
+    name: "Humpty Calderon",
     imgPath: "jun li.jpg",
     positions: [
-      "Founder - Ontology",
-      "CEO - Ontology",
-      "Co-Founder - OnChain",
+      "Head of Community - Ontology",
+      
       
     ],
   },
