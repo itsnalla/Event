@@ -87,7 +87,7 @@ const PROGRAMME: Segment[] = [
     assigned: "Humpty Calderon",
   },
   {
-    name: "what is Firs choice coin? fcc staking?",
+    name: "what is First choice coin? fcc staking?",
     time: "02:30PM - 03:00PM",
     assigned: "Alvin Abalos",
   },
