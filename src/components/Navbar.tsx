@@ -36,7 +36,7 @@ const Navbar: FC = () => {
             </a>
             <a
               className="mx-4"
-              href="https://cryptostakingconference.fccnft.info/"
+              href="https://ticketscsc.fccnft.info/"
               target="_blank"
               rel="noopener noreferrer"
             >
