@@ -157,7 +157,7 @@ const Home: FC = () => {
             >
               <img
                 className="w-full"
-                src="sponsors/tenderize.png"
+                src="sponsors/tenderizelogo.png"
                 alt="Tenderize"
               />
             </a>
