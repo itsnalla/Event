@@ -74,16 +74,6 @@ const SPEAKERS = [
       
     ],
   },
-  {
-    name: "NBI/POLICE Representative",
-    imgPath: "nbi.jpeg",
-    positions: [
-      "For identifying Digital Fruad and protection",
-      
-      
-    ],
-  },
-
  
 ];
 
@@ -91,13 +81,13 @@ const Home: FC = () => {
   return (
     <main>
       <Navbar />
-      <header className="flex h-screen w-screen items-center justify-center bg-black bg-cover p-10 font-satoshi">
+      <header className="flex h-screen w-screen items-center justify-center bg-black bg-header p-10 font-satoshi">
         <div className="flex flex-col items-center text-white">
           <p className="text-center text-xl font-bold tracking-[12px] md:text-3xl">
             CRYPTO STAKING CONFERENCE
           </p>
           <h1 className="my-8 text-center font-futura text-4xl font-bold md:text-6xl">
-            WHAT IS STAKING/PROOF OF STAKING?
+            What is Staking/ Proof-of-Stake?
           </h1>
           <p className="mb-8 max-w-[900px] text-center font-satoshi text-base text-base font-bold tracking-widest md:text-lg">
           Join us in building stronger and discovering deeper the 
