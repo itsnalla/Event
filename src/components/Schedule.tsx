@@ -37,7 +37,7 @@ const PROGRAMME: Segment[] = [
     assigned: "PASTOR EDGAR TACATA",
   },
   {
-    name: "OPENING AND WELCOME REMARCH",
+    name: "OPENING AND WELCOME REMARKS",
     time: "9:40AM - 10:00AM",
     assigned: "MC",
   },
@@ -72,7 +72,7 @@ const PROGRAMME: Segment[] = [
     assigned: "",
   },
   {
-    name: "what is Livepeer? lpt delegtaion?",
+    name: "what is Livepeer? lpt delegation?",
     time: "01:00PM - 01:30PM",
     assigned: "Doug Petkanics",
   },
