@@ -103,7 +103,7 @@ const Home: FC = () => {
             </div>
           </a>
           <p className="text-base font-bold opacity-80 hover:opacity-100">
-            Slots: Limited: 129 available
+            Limited Slots: 129 left
           </p>
         </div>
       </header>
