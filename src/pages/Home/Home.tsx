@@ -160,7 +160,7 @@ const Home: FC = () => {
             >
               <img
                 className="w-full"
-                src="sponsors/fcc logo nb.jpg"
+                src="sponsors/fcc logo.jpg"
                 alt="First Choice Coin"
               />
             </a>
