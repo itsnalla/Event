@@ -334,18 +334,36 @@ const Home: FC = () => {
         </div>
       </section>
 
-      <section className="h-[500px] w-screen bg-draper-two bg-cover bg-center text-white">
-        <div className="flex h-full w-full flex-col items-center justify-center bg-dim p-10">
-          <h2 className="mb-4 text-center font-satoshi text-xl font-bold tracking-widest md:text-2xl">
-          Mar. 25, 2023 @ 9AM-7PM PHT
-          </h2>
-          <h1 className="text-center font-futura text-3xl font-bold tracking-wide md:text-5xl">
-          Summit Hotel Grand BallRoom - Conference
-            <h2>
-              <span>and</span>
-            </h2>
-            Robinson MALL Activity Area - for Booth and merch
-          </h1>
+      <section className="h-[500px] w-screen text-center bg-center text-black">
+      <div className="flex flex-col items-center text-black">
+      <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl"></h4>
+        <p className="text-center text-xl font-bold tracking-[1px] md:text-5xl">
+          WHY ATTEND CRYPTO STAKING CONFERENCE?
+        </p>
+        <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl"></h4>
+        <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl"></h4>
+         <div>
+        <h1 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
+         GENERAL AUDIENCE - 
+         Meet founders and executives of leading crypto project and 
+         share view on the Staking industry. 
+         </h1>
+          
+        <h3 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
+         <span>INVESTORS.STARTUPS - 
+         Crypto Staking Conference brings together the investors, industry insiders 
+         and startups and creates unique networking and opportunities.
+         </span>
+         </h3>
+        
+         <h3 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
+         <span>BUSINESS OWNERS/AGENCIES - 
+         Crypto Staking Conference create business opportunities to start in the cryptocurrency world 
+         and adopt it into your existing system.
+         </span>
+         </h3>
+       
+         </div>
         </div>
       </section>
 
