@@ -10,11 +10,6 @@ import { FC } from "react";
 // Modules
 
 //--------------------------------------------
-// Global Variables/Constants
-const HR_LENGTH = 100; // in px
-const HEIGHT = 50; // in px
-const START = 18; // in 24:00 format
-
 /*
  * @dev duration is in hours
  */
