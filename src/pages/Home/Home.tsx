@@ -408,7 +408,7 @@ const Home: FC = () => {
 
         </div>
       </section>
-      <section className="h-[500px] w-screen text-center bg-gradient-to-t from-gray-700 via-gray-900 to-black text-black">
+      <section className="h-[100%] w-screen text-center bg-gradient-to-t from-gray-700 via-gray-900 to-black text-black">
       <div className="flex flex-col items-center text-white">
         <p></p>
       <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
