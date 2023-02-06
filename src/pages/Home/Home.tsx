@@ -477,7 +477,7 @@ const Home: FC = () => {
               <p className="my-2 font-satoshi text-base">Telegram</p>
             </a>
             <a
-              href="https://www.facebook.com/groups/511770354380346"
+              href="https://www.facebook.com/profile.php?id=100089099091708"
               target="_blank"
               rel="noopener noreferrer"
             >

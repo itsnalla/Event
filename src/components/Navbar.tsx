@@ -41,7 +41,7 @@ const Navbar: FC = () => {
               Sponsors
             </a>
             <a
-              href="https://www.facebook.com/groups/511770354380346"
+              href="https://www.facebook.com/profile.php?id=100089099091708"
               target="_blank"
               rel="noopener noreferrer"
             >
