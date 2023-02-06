@@ -125,11 +125,11 @@ const Home: FC = () => {
             Mar. 25, 2023 @ 9AM-7PM PHT
           </h2>
           <h1 className="text-center font-futura text-3xl font-bold tracking-wide md:text-5xl">
-            Summit Hotel Grand BallRoom - Conference
+            Summit Hotel Grand BallRoom - Conference and exhibit
             <h2>
               <span>and</span>
             </h2>
-            Robinson MALL Activity Area - for Booth and merch
+        
           </h1>
         </div>
       </section>
@@ -261,7 +261,7 @@ const Home: FC = () => {
                 <li>your project pamphlets will be included in the EVENT KIT.</li>
                 <li>10 to 20 minutes speaking time for your Project Promotion</li>
                 <li>10 to minutes time to speak about A topic</li>
-                <li>booth in Robinson mall exhibit for your project.</li>
+                <li>booth in exhibit for your project.</li>
                 <li className="grey"><a href="https://tickets-snowy.vercel.app" className="button">Buy Now</a></li>
               </ul>
         </div> 
@@ -274,11 +274,11 @@ const Home: FC = () => {
           Mar. 25, 2023 @ 9AM-7PM PHT
           </h2>
           <h1 className="text-center font-futura text-3xl font-bold tracking-wide md:text-5xl">
-          Summit Hotel Grand BallRoom - Conference
+           Summit Hotel Grand BallRoom - Conference and exhibit
             <h2>
               <span>and</span>
             </h2>
-            Robinson MALL Activity Area - for Booth and merch
+            
           </h1>
         </div>
       </section>
