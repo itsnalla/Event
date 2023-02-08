@@ -127,7 +127,7 @@ const Home: FC = () => {
           <h1 className="text-center font-futura text-3xl font-bold tracking-wide md:text-5xl">
             Summit Hotel Grand BallRoom - Conference and exhibit
             <h2>
-              <span>and</span>
+              <span></span>
             </h2>
         
           </h1>
