@@ -68,7 +68,7 @@ const SPEAKERS = [
     name: "Alvin Abalos",
     imgPath: "alvin.png",
     positions: [
-      "CEO - First choice coin",
+      "CEO - First choice coin DAO",
       "Community Manager",
       "Crypto Ambassador",
       
