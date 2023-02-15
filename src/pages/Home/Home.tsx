@@ -37,7 +37,7 @@ const INCLUDES = [
 const SPEAKERS = [
   {
     name: "Doug Petkanics",
-    imgPath: "doug.jpg",
+    imgPath: "doug.png",
     positions: [
       "Co-Founder - livepeer",
       "Co-Founder - livepeer studio",
@@ -66,11 +66,21 @@ const SPEAKERS = [
   },
   {
     name: "Alvin Abalos",
-    imgPath: "alvin.jpg",
+    imgPath: "alvin.png",
     positions: [
-      "CEO - First choice coin",
+      "CEO - First choice coin DAO",
       "Community Manager",
       "Crypto Ambassador",
+      
+    ],
+  },
+  {
+    name: "Allan Catayoc",
+    imgPath: "allan.png",
+    positions: [
+      "Visayas Regional Manager - Web3 Philippines",
+      "CEO/Founder - Heroes Uprising",
+      "Co-Founder - Vulcanic Labs",
       
     ],
   },
@@ -81,6 +91,7 @@ const Home: FC = () => {
   return (
     <main>
       <Navbar />
+      <section id="home">
       <header className="flex h-screen w-screen items-center justify-center bg-black bg-header p-10 font-satoshi">
         <div className="flex flex-col items-center text-white">
           <p className="text-center text-xl font-bold tracking-[12px] md:text-3xl">
@@ -94,21 +105,184 @@ const Home: FC = () => {
           concept of Proof of Staking from the greatest minds in the space.
           </p>
           <a
-            href="https://tickets-snowy.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#tickets"
           >
             <div className="mb-2 rounded-full border-2 border-white py-2 px-6 text-center text-base font-bold hover:cursor-pointer hover:bg-white hover:text-purple-heart md:text-2xl">
               Get NFT Ticket
             </div>
           </a>
           <p className="text-base font-bold opacity-80 hover:opacity-100">
-            Limited Slots: 129 left
+            Slots: Limited
           </p>
         </div>
       </header>
+      </section>
+
+      
+      <section className="h-[500px] w-screen bg-draper-one bg-cover bg-center text-white">
+        <div className="flex h-full w-full flex-col items-center justify-center bg-dim p-10">
+          <h2 className="mb-4 text-center font-satoshi text-xl font-bold tracking-widest md:text-2xl">
+            Mar. 25, 2023 @ 9AM-7PM PHT
+          </h2>
+          <h1 className="text-center font-futura text-3xl font-bold tracking-wide md:text-5xl">
+            Summit Hotel Grand BallRoom - Conference and exhibit
+            <h2>
+              <span></span>
+            </h2>
+        
+          </h1>
+        </div>
+      </section>
+
+      <section className="flex flex-col items-center bg-purple-circles bg-[length:100%_100%] py-28 px-10">
+        <div className="w-screen max-w-[900px] p-10">
+          <h1 className="mb-16 w-full text-center font-futura text-xl text-black md:text-3xl">
+            What to expect out of CRYPTO STAKING CONFERENCE event?
+          </h1>
+          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {INCLUDES.map((e, idx) => (
+              <div key={idx} className="flex h-full w-full justify-center">
+                <div className="flex h-full w-9/12 flex-col items-center rounded-2xl border-2 border-stone-400 p-4">
+                  <img src={e.imgPath} alt={e.name} />
+                  <p className="text-center font-satoshi text-base ">
+                    {e.name}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+</section>
+<section 
+        id="speakers"
+        className="flex flex-col items-center bg-stone-400-circles bg-[length:100%_100%] py-28 px-10">
+        <div className="mt-20 w-screen max-w-[900px]">
+          <h1 className="mb-16 w-full text-center font-futura text-xl text-black md:text-3xl">
+            Event Speakers
+          </h1>
+          {SPEAKERS.map((e, idx) => (
+            <div key={idx}>
+              <div className="grid w-full grid-cols-1 px-10 text-center md:grid-cols-2 md:text-left">
+                <aside className="order-first flex items-center justify-center md:order-none">
+                  <img src={e.imgPath} alt={e.name} />
+                </aside>
+
+                <aside
+                  className={`mb-10 flex flex-col justify-center ${
+                    idx % 2 === 1 ? "order-first" : ""
+                  }`}
+                >
+                  <h1 className="mb-2 border-b-2 border-stone-400 font-futura text-lg text-stone-400 md:text-2xl">
+                    {e.name}
+                  </h1>
+                  {e.positions.map((p, pIdx) => (
+                    <p key={pIdx} className="font-satoshi text-base font-bold">
+                      {p}
+                    </p>
+                  ))}
+                </aside>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div>
+        <p className="my-32 max-w-[400px]  font-satoshi text-xl font-bold ">
+          AND MANY MORE SPEAKERS</p>
+        </div>
+
+        <p className="my-32 max-w-[400px] rounded-2xl border-4 border-stone-400 p-4 text-center font-satoshi text-xl font-bold text-stone-400">
+          If you're ready to learn about Crypto Staking join us in our event.
+        </p>
+      </section>
+
+      <section className="w-screen bg-gradient-to-t bg-gradient-to-t from-gray-700 via-gray-900 to-black text-white">
+        <h1
+          id="programme"
+          className="w-full text-center font-futura text-3xl text-white"
+        >
+          Programme
+        </h1>
+    
+        <div className="flex w-full justify-center">
+          <Schedule />
+        </div>
+      </section>
 
       <section
+        id="tickets"
+        className="bg-sponsors-bg flex w-screen flex-col items-center p-10 md:p-20"
+      >
+        <h1 className="pb-4 text-center font-futura text-xl text-black md:text-3xl">
+          Event Ticket Prices
+        </h1>
+        <div className="grid-cols-3">
+          <div className="flex h-full w-full justify-center">
+        <div className="ticketcolumns">
+              <ul className="price">
+                <li className="header">Gen. Admission</li>
+                <li className="grey">10 MATIC</li>
+                <li>Access to conference</li>
+                <li>Event kit (includes tshirt)</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+                <li className="grey"><a href="https://tickets-snowy.vercel.app" className="button">Buy Now</a></li>
+              </ul>
+        </div> 
+        <div className="ticketcolumns">
+              <ul className="price">
+                <li className="header">VIP</li>
+                <li className="grey">50 MATIC</li>
+                <li>Access to conference</li>
+                <li>Event kit</li>
+                <li>t-shirts</li>
+                <li>1 San Juanico cruise during sunset</li>
+                <li>1 Dinner @ Oriental De Leyte and fire dance show</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+                <li>x</li>
+                <li className="grey"><a href="https://tickets-snowy.vercel.app" className="button">Buy Now</a></li>
+              </ul>
+        </div> 
+        <div className="ticketcolumns">
+              <ul className="price">
+                <li className="header">Sponsor</li>
+                <li className="grey">700 MATIC</li>
+                <li>2 Access to conference</li>
+                <li>Event kit</li>
+                <li>t-shirts and merch</li>
+                <li>2 Dinner @ Oriental De Leyte and fire dance show</li>
+                <li>Promote you Project</li>
+                <li>your project pamphlets will be included in the EVENT KIT.</li>
+                <li>10 to 20 minutes speaking time for your Project Promotion</li>
+                <li>10 to minutes time to speak about A topic</li>
+                <li>booth in exhibit for your project.</li>
+                <li className="grey"><a href="https://tickets-snowy.vercel.app" className="button">Buy Now</a></li>
+              </ul>
+        </div> 
+</div>
+</div>
+</section>
+<section className="h-[500px] w-screen bg-draper-two bg-cover bg-center text-white">
+        <div className="flex h-full w-full flex-col items-center justify-center bg-dim p-10">
+          <h2 className="mb-4 text-center font-satoshi text-xl font-bold tracking-widest md:text-2xl">
+          Mar. 25, 2023 @ 9AM-7PM PHT
+          </h2>
+          <h1 className="text-center font-futura text-3xl font-bold tracking-wide md:text-5xl">
+           Summit Hotel Grand BallRoom - Conference and exhibit
+            <h2>
+              <span></span>
+            </h2>
+            
+          </h1>
+        </div>
+      </section>
+<section
         id="sponsors"
         className="bg-sponsors-bg flex w-screen flex-col items-center p-10 md:p-20"
       >
@@ -232,116 +406,15 @@ const Home: FC = () => {
             </a>
           </aside>
 
-          <aside className="flex w-full items-center justify-center">
-            <a
-              href="https://ossph.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="w-full max-w-[200px]"
-                src=".png"
-                alt=""
-              />
-            </a>
-          </aside>
         </div>
       </section>
-
-      <section className="h-[500px] w-screen bg-draper-one bg-cover bg-center text-white">
-        <div className="flex h-full w-full flex-col items-center justify-center bg-dim p-10">
-          <h2 className="mb-4 text-center font-satoshi text-xl font-bold tracking-widest md:text-2xl">
-            Mar. 25, 2023 @ 9AM-7PM PHT
-          </h2>
-          <h1 className="text-center font-futura text-3xl font-bold tracking-wide md:text-5xl">
-            Summit Hotel Grand BallRoom - Conference
-            <h2>
-              <span>and</span>
-            </h2>
-            Robinson MALL Activity Area - for Booth and merch
-          </h1>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center bg-purple-circles bg-[length:100%_100%] py-28 px-10">
-        <div className="w-screen max-w-[900px] p-10">
-          <h1 className="mb-16 w-full text-center font-futura text-xl text-black md:text-3xl">
-            What to expect out of CRYPTO STAKING CONFERENCE event?
-          </h1>
-          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {INCLUDES.map((e, idx) => (
-              <div key={idx} className="flex h-full w-full justify-center">
-                <div className="flex h-full w-9/12 flex-col items-center rounded-2xl border-2 border-purple-heart p-4">
-                  <img src={e.imgPath} alt={e.name} />
-                  <p className="text-center font-satoshi text-base ">
-                    {e.name}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-20 w-screen max-w-[900px]">
-          <h1 className="mb-16 w-full text-center font-futura text-xl text-black md:text-3xl">
-            Event Speakers
-          </h1>
-          {SPEAKERS.map((e, idx) => (
-            <div key={idx}>
-              <div className="grid w-full grid-cols-1 px-10 text-center md:grid-cols-2 md:text-left">
-                <aside className="order-first flex items-center justify-center md:order-none">
-                  <img src={e.imgPath} alt={e.name} />
-                </aside>
-
-                <aside
-                  className={`mb-10 flex flex-col justify-center ${
-                    idx % 2 === 1 ? "order-first" : ""
-                  }`}
-                >
-                  <h1 className="mb-2 border-b-2 border-purple-heart font-futura text-lg text-purple-heart md:text-2xl">
-                    {e.name}
-                  </h1>
-                  {e.positions.map((p, pIdx) => (
-                    <p key={pIdx} className="font-satoshi text-base font-bold">
-                      {p}
-                    </p>
-                  ))}
-                </aside>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div>
-        <p className="my-32 max-w-[400px]  font-satoshi text-xl font-bold ">
-          AND MANY MORE SPEAKERS</p>
-        </div>
-
-        <p className="my-32 max-w-[400px] rounded-2xl border-4 border-purple-heart p-4 text-center font-satoshi text-xl font-bold text-purple-heart">
-          If you're ready to learn about Crypto Staking join us in our event.
-        </p>
-      </section>
-
-      <section className="w-screen bg-gradient-to-b from-purple-heart to-blue-ribbon py-10 text-white">
-        <h1
-          id="programme"
-          className="w-full text-center font-futura text-3xl text-white"
-        >
-          Programme
-        </h1>
-    
-        <div className="flex w-full justify-center">
-          <Schedule />
-        </div>
-      </section>
-
-      <section className="h-[500px] w-screen text-center bg-center text-black">
-      <div className="flex flex-col items-center text-black">
-      <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl"></h4>
+      <section className="h-[100%] w-screen text-center bg-gradient-to-t from-gray-700 via-gray-900 to-black text-black">
+      <div className="flex flex-col items-center text-white">
+        <p></p>
+      <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
         <p className="text-center text-xl font-bold tracking-[1px] md:text-5xl">
           WHY ATTEND CRYPTO STAKING CONFERENCE?
-        </p>
-        <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl"></h4>
-        <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl"></h4>
+        </p></h4>
          <div>
         <h1 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
          GENERAL AUDIENCE - 
@@ -362,17 +435,17 @@ const Home: FC = () => {
          and adopt it into your existing system.
          </span>
          </h3>
-       
          </div>
         </div>
       </section>
+      
 
       <footer className="grid w-screen grid-cols-1 bg-black-pearl p-10 text-white md:grid-cols-[1fr_4fr]">
         <aside className="flex w-full justify-center md:block">
           <img
             className="h-auto w-full max-w-[200px]"
             src="csc logo.png"
-            alt="Web3 Philippines Logo"
+            alt="CSC Logo"
           />
         </aside>
 
@@ -382,6 +455,9 @@ const Home: FC = () => {
             <Link to="/">
               <p className="my-2 font-satoshi text-base">Home</p>
             </Link>
+            <a href="#speakers">
+              <p className="my-2 font-satoshi text-base">Speakers</p>
+            </a>
             <a href="#programme">
               <p className="my-2 font-satoshi text-base">Programme</p>
             </a>
@@ -401,7 +477,7 @@ const Home: FC = () => {
               <p className="my-2 font-satoshi text-base">Telegram</p>
             </a>
             <a
-              href="https://www.facebook.com/groups/511770354380346"
+              href="https://www.facebook.com/profile.php?id=100089099091708"
               target="_blank"
               rel="noopener noreferrer"
             >
