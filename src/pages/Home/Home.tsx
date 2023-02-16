@@ -18,26 +18,26 @@ import Schedule from "components/Schedule";
 const INCLUDES = [
   {
     name: "IRL Event",
-    imgPath: "event.svg",
+    imgPath: "events.png",
   },
   {
-    name: "Crypto Staking Conference Merch",
-    imgPath: "bado.svg",
+    name: "CSC Merch",
+    imgPath: "merch.png",
   },
   {
     name: "San Juanico Cruise",
-    imgPath: "cruise.svg",
+    imgPath: "cruise.png",
   },
   {
     name: "Activities",
-    imgPath: "group.svg",
+    imgPath: "activities.png",
   },
 ];
 
 const SPEAKERS = [
   {
     name: "Doug Petkanics",
-    imgPath: "doug.png",
+    imgPath: "speakers/doug.png",
     positions: [
       "Co-Founder - livepeer",
       "Co-Founder - livepeer studio",
@@ -47,7 +47,7 @@ const SPEAKERS = [
   },
   {
     name: "Nico Vergauwen",
-    imgPath: "nico.png",
+    imgPath: "speakers/nico.png",
     positions: [
       "Co-Founder - Tenderize.me",
       "CEO - Tenderize.me",
@@ -57,7 +57,7 @@ const SPEAKERS = [
   },
   {
     name: "Humpty Calderon",
-    imgPath: "ont.png",
+    imgPath: "speakers/humpty.png",
     positions: [
       "Head of Community - Ontology",
       
@@ -66,7 +66,7 @@ const SPEAKERS = [
   },
   {
     name: "Alvin Abalos",
-    imgPath: "alvin.png",
+    imgPath: "speakers/alvin.png",
     positions: [
       "CEO - First choice coin DAO",
       "Community Manager",
@@ -76,7 +76,7 @@ const SPEAKERS = [
   },
   {
     name: "Allan Catayoc",
-    imgPath: "allan.png",
+    imgPath: "speakers/allan.png",
     positions: [
       "Visayas Regional Manager - Web3 Philippines",
       "CEO/Founder - Heroes Uprising",
@@ -84,6 +84,54 @@ const SPEAKERS = [
       
     ],
   },
+  {
+    name: "Nigel Dollentas",
+    imgPath: "speakers/nigel.png",
+    positions: [
+      "Head of Community - Tenderize",
+    ],
+  },
+  {
+    name: "Angel Abalos",
+    imgPath: "speakers/angel.png",
+    positions: [
+      "CEO - First Choice Coin",
+    ],
+  },
+  {
+    name: "Raine Laluna",
+    imgPath: "speakers/raine.png",
+    positions: [
+      "Co-Founder - FilipinasNFT",
+      "Co-Founder - Web3 Cebu",
+    ],
+  },
+  {
+    name: "Jeff Caceres",
+    imgPath: "speakers/jeff.png",
+    positions: [
+      "Founder - NomadFury",
+      "Founder - Web3 Lounge",
+      "Founder - Web3 Bacolod",
+    ],
+  },
+  {
+    name: "Ken Berdz Berry",
+    imgPath: "speakers/ken.png",
+    positions: [
+      "Founder - Blockchain Network Philippines",
+      "Founder - Mindanao Blockchain Association",
+    ],
+  },
+  {
+    name: "Lou Sumampong",
+    imgPath: "speakers/lou.png",
+    positions: [
+      "Social Media Manager - Blockchain Network Philippines",
+      "Philippines Brand Ambassador - Upstairs NFT Marketplace",
+    ],
+  },
+  
  
 ];
 
@@ -92,13 +140,13 @@ const Home: FC = () => {
     <main>
       <Navbar />
       <section id="home">
-      <header className="flex h-screen w-screen items-center justify-center bg-black bg-header p-10 font-satoshi">
+      <header className="flex h-screen w-screen items-center justify-center bg-header bg-opacity-25 p-10 font-satoshi">
         <div className="flex flex-col items-center text-white">
           <p className="text-center text-xl font-bold tracking-[12px] md:text-3xl">
             CRYPTO STAKING CONFERENCE
           </p>
           <h1 className="my-8 text-center font-futura text-4xl font-bold md:text-6xl">
-            What is Staking/ Proof-of-Stake?
+            What is Staking / Proof-of-Stake?
           </h1>
           <p className="mb-8 max-w-[900px] text-center font-satoshi text-base text-base font-bold tracking-widest md:text-lg">
           Join us in building stronger and discovering deeper the 
@@ -142,7 +190,7 @@ const Home: FC = () => {
           <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             {INCLUDES.map((e, idx) => (
               <div key={idx} className="flex h-full w-full justify-center">
-                <div className="flex h-full w-9/12 flex-col items-center rounded-2xl border-2 border-stone-400 p-4">
+                <div className="flex h-full w-9/12 flex-col items-center rounded-2xl border-2 border-purple-400 p-4">
                   <img src={e.imgPath} alt={e.name} />
                   <p className="text-center font-satoshi text-base ">
                     {e.name}
@@ -155,7 +203,7 @@ const Home: FC = () => {
 </section>
 <section 
         id="speakers"
-        className="flex flex-col items-center bg-stone-400-circles bg-[length:100%_100%] py-28 px-10">
+        className="flex flex-col items-center bg-purple-400-circles bg-[length:100%_100%] py-28 px-10">
         <div className="mt-20 w-screen max-w-[900px]">
           <h1 className="mb-16 w-full text-center font-futura text-xl text-black md:text-3xl">
             Event Speakers
@@ -172,7 +220,7 @@ const Home: FC = () => {
                     idx % 2 === 1 ? "order-first" : ""
                   }`}
                 >
-                  <h1 className="mb-2 border-b-2 border-stone-400 font-futura text-lg text-stone-400 md:text-2xl">
+                  <h1 className="mb-2 border-b-2 border-purple-400 font-futura text-lg text-purple-400 md:text-2xl">
                     {e.name}
                   </h1>
                   {e.positions.map((p, pIdx) => (
@@ -185,20 +233,20 @@ const Home: FC = () => {
             </div>
           ))}
         </div>
-        <div>
-        <p className="my-32 max-w-[400px]  font-satoshi text-xl font-bold ">
+        {/*<div>
+       <p className="my-32 max-w-[400px]  font-satoshi text-xl font-bold ">
           AND MANY MORE SPEAKERS</p>
-        </div>
+                  </div>*/}
 
-        <p className="my-32 max-w-[400px] rounded-2xl border-4 border-stone-400 p-4 text-center font-satoshi text-xl font-bold text-stone-400">
+        <p className="my-32 max-w-[400px] rounded-2xl border-4 border-purple-400 p-4 text-center font-satoshi text-xl font-bold text-purple-400">
           If you're ready to learn about Crypto Staking join us in our event.
         </p>
       </section>
 
-      <section className="w-screen bg-gradient-to-t bg-gradient-to-t from-gray-700 via-gray-900 to-black text-white">
+      <section className="w-screen bg-gradient-to-b from-purple-400/25 via-fuchsia-500/25 to-purple-900/25 text-black">
         <h1
           id="programme"
-          className="w-full text-center font-futura text-3xl text-white"
+          className="w-full text-center font-futura text-3xl text-black"
         >
           Programme
         </h1>
@@ -289,7 +337,7 @@ const Home: FC = () => {
         <h1 className="pb-4 text-center font-futura text-xl text-black md:text-3xl">
           Special thanks to our sponsors!
         </h1>
-        <div className="grid max-w-[900px] grid-cols-1 gap-8 md:grid-cols-[1fr_2fr_1fr]">
+        <div className="grid max-w-[900px] grid-cols-1 gap-8 md:grid-cols-2">
           <aside className="flex w-full items-center justify-center">
             <a
               href="https://livepeer.org/"
@@ -349,7 +397,7 @@ const Home: FC = () => {
         <h1 className="pb-4 text-center font-futura text-xl text-black md:text-3xl">
           Also to our community partners!
         </h1>
-        <div className="grid max-w-[900px] grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid max-w-[900px] grid-cols-1 gap-8 md:grid-cols-4">
           <aside className="flex w-full items-center justify-center">
             <a
               href="https://firstchoicecoin.info/"
@@ -406,30 +454,86 @@ const Home: FC = () => {
             </a>
           </aside>
 
+          <aside className="flex w-full items-center justify-center">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-full max-w-[400px]"
+                src="partners/apex.jpg"
+                alt=""
+              />
+            </a>
+          </aside>
+
+          <aside className="flex w-full items-center justify-center">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-full max-w-[400px]"
+                src="partners/artspot.jpg"
+                alt=""
+              />
+            </a>
+          </aside>
+
+          <aside className="flex w-full items-center justify-center">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-full max-w-[400px]"
+                src="partners/donpedrohotel.jpg"
+                alt=""
+              />
+            </a>
+          </aside>
+
+          <aside className="flex w-full items-center justify-center">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-full max-w-[400px]"
+                src="partners/nerjan.jpg"
+                alt=""
+              />
+            </a>
+          </aside>
+
         </div>
       </section>
-      <section className="h-[100%] w-screen text-center bg-gradient-to-t from-gray-700 via-gray-900 to-black text-black">
+      <section className="h-[100%] w-screen text-center bg-gradient-to-b from-purple-400/25 via-fuchsia-500/25 to-purple-900/25">
       <div className="flex flex-col items-center text-white">
         <p></p>
-      <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
+      <h4 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl text-black">
         <p className="text-center text-xl font-bold tracking-[1px] md:text-5xl">
           WHY ATTEND CRYPTO STAKING CONFERENCE?
         </p></h4>
          <div>
-        <h1 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
+        <h1 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl text-black">
          GENERAL AUDIENCE - 
          Meet founders and executives of leading crypto project and 
          share view on the Staking industry. 
          </h1>
           
-        <h3 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
+        <h3 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl text-black">
          <span>INVESTORS.STARTUPS - 
          Crypto Staking Conference brings together the investors, industry insiders 
          and startups and creates unique networking and opportunities.
          </span>
          </h3>
         
-         <h3 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl">
+         <h3 className="mb-8 max-w-[1200px] text-center font-futura text-3xl font-bold tracking-wide md:text-2xl text-black">
          <span>BUSINESS OWNERS/AGENCIES - 
          Crypto Staking Conference create business opportunities to start in the cryptocurrency world 
          and adopt it into your existing system.
@@ -440,7 +544,7 @@ const Home: FC = () => {
       </section>
       
 
-      <footer className="grid w-screen grid-cols-1 bg-black-pearl p-10 text-white md:grid-cols-[1fr_4fr]">
+      <footer className="grid w-screen grid-cols-1 bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-slate-900 via-purple-900 to-slate-900 p-10 text-white md:grid-cols-[1fr_4fr]">
         <aside className="flex w-full justify-center md:block">
           <img
             className="h-auto w-full max-w-[200px]"

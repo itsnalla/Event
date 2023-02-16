@@ -39,7 +39,7 @@
 
 /* Pricing header */
 .price .header {
-  background-color: #111;
+  background-color: rgb(114, 0, 95);
   color: white;
   font-size: 25px;
 }
@@ -59,7 +59,7 @@
 
 /* The "Buy Now" button */
 .button {
-  background-color: #000000;
+  background-color: rgb(114, 0, 95);
   border: none;
   color: white;
   padding: 10px 25px;
