@@ -278,7 +278,7 @@ const Home: FC = () => {
                 <li>x</li>
                 <li>x</li>
                 <li>x</li>
-                <li className="grey"><a href="https://tickets-snowy.vercel.app" className="button">Buy Now</a></li>
+                <li className="grey"><a href="https://ticketscsc.fccnft.info/" className="button">Buy Now</a></li>
               </ul>
         </div> 
         <div className="ticketcolumns">
@@ -294,7 +294,7 @@ const Home: FC = () => {
                 <li>x</li>
                 <li>x</li>
                 <li>x</li>
-                <li className="grey"><a href="https://tickets-snowy.vercel.app" className="button">Buy Now</a></li>
+                <li className="grey"><a href="https://ticketscsc.fccnft.info/" className="button">Buy Now</a></li>
               </ul>
         </div> 
         <div className="ticketcolumns">
@@ -310,7 +310,7 @@ const Home: FC = () => {
                 <li>10 to 20 minutes speaking time for your Project Promotion</li>
                 <li>10 to minutes time to speak about A topic</li>
                 <li>booth in exhibit for your project.</li>
-                <li className="grey"><a href="https://tickets-snowy.vercel.app" className="button">Buy Now</a></li>
+                <li className="grey"><a href="https://ticketscsc.fccnft.info/" className="button">Buy Now</a></li>
               </ul>
         </div> 
 </div>
