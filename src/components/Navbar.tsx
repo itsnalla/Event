@@ -34,7 +34,7 @@ const Navbar: FC = () => {
             <a className="mx-4" href="#programme">
               Programme
             </a>
-            <a className="mx-4" href="#tickets">
+            <a className="mx-4" href="https://ticketscsc.fccnft.info/">
               Tickets
             </a>
             <a className="mx-4" href="#sponsors">
