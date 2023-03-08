@@ -79,7 +79,7 @@ const SPEAKERS = [
     imgPath: "speakers/allan.png",
     positions: [
       "Visayas Regional Manager - Web3 Philippines",
-      "CEO/Founder - Heroes Uprising",
+      "Founder - Heroes Uprising",
       "Co-Founder - Vulcanic Labs",
       
     ],
@@ -95,7 +95,8 @@ const SPEAKERS = [
     name: "Angel Abalos",
     imgPath: "speakers/angel.png",
     positions: [
-      "CEO - First Choice Coin",
+      "Co-founder of First Choice Coin DAO",
+      "Co-Founder of Crypto Staking Conference 2023",
     ],
   },
   {
@@ -408,6 +409,20 @@ const Home: FC = () => {
                 className="w-full max-w-[400px]"
                 src="partners/fcc academy.png"
                 alt="fcc academy"
+              />
+            </a>
+          </aside>
+
+          <aside className="flex w-full items-center justify-center">
+            <a
+              href="https://web3philippines.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-full max-w-[400px]"
+                src="partners/web3philippines.png"
+                alt="Web3 Philippines"
               />
             </a>
           </aside>
